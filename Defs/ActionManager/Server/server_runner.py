@@ -6,25 +6,14 @@
 #
 
 
-from Defs.ImportManager.unsorted_will_be_replaced import (
-    run_command,
-    run_background_command,
-    wait,
-    ngrok,
-    requests,
-    regular_expression,
-    check_output,
-    CalledProcessError,
-    chdir,
-    chmod,
-    DEVNULL,
-    PIPE,
-    path,
-)
-import Defs.ThemeManager.theme as theme
+import os
+
 import Defs.LocalizationManager.lang_action_manager.lang_server.lang_server_runner as localization
 import Defs.LocalizationManager.lang_global_usage as global_localization
-import os
+import Defs.ThemeManager.theme as theme
+from Defs.ImportManager.unsorted_will_be_replaced import (
+    DEVNULL, PIPE, CalledProcessError, chdir, check_output, chmod, ngrok, path,
+    regular_expression, requests, run_background_command, run_command, wait)
 
 default_palette = theme.default_palette
 try:
